@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/popTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/more_information"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/popListTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popTittle"
+                android:text="@string/surrounding_cities"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/dismissPopup"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/popTittle"
+
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+
+
+                android:text="@string/hello" />
+
+            <TextView
+                android:id="@+id/popList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popListTittle"
+                android:text="@string/hello"
+                android:textSize="15sp"/>
+            <WebView
+                android:id="@+id/htmlWebView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popList"
+                tools:ignore="WebViewLayout">
+            </WebView>
+
+            <Button
+                android:id="@+id/dismissPop"
+                android:text="@string/close"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/htmlWebView"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
