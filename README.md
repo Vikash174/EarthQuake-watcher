@@ -1,6 +1,5 @@
  # EarthQuake-watcher
-   => It shows the  recently occurred earthquakes   around  the globe. 
-   => It shows the locations on map where was the earthquake occurred.
+   It shows the  recently occurred earthquakes   around  the globe. \n  It shows the locations on map where was the earthquake occurred.
  
 
 ## Getting Started
@@ -13,7 +12,7 @@ Clone the project and run to get started.
   <tr>
      <td>Markers on Map</td>
      <td>Details about location</td>
-     <td>Add Journal Activity</td>
+     <td></td>
     
   </tr>
   <tr>
